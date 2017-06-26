@@ -10,32 +10,56 @@ namespace ReactCalc
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, I m Калькулятор");
-
-            Console.WriteLine("Введите x");
-            var strx = Console.ReadLine();
+            Console.WriteLine("Hello, i'm Калькулятор");
 
             int x = 0;
-            if (!int.TryParse(strx, out x))
-            {
-                x = 100;
-            }
-
-            Console.WriteLine("Введите y");
-            var stry = Console.ReadLine();
-            
             int y = 0;
-            if (!int.TryParse(strx, out x))
-            {
-                y = 99;
-            }
+            var calc = new Calc();
 
-            var result = 0;
+            if (args.Length == 2)
+                {
+                    x = ToInt(args[0], 70);
+                    y = ToInt(args[1], 83);
+                }
+            else
+                {
+                    #region Ввод данных
 
-            Console.WriteLine("Сумма " + result.ToString());
+                    Console.WriteLine("Введите Х");
+                    var strx = Console.ReadLine();
+                    x = ToInt(strx);
+
+                    Console.WriteLine("Введите Y");
+                    var stry = Console.ReadLine();
+                    y = ToInt(stry, 99);
+
+                    #endregion
+                }
+
+            var result = calc.Sum(x, y);
+
+            Console.WriteLine("Сумма = " + result.ToString());
+
             Console.ReadKey();
-            
         }
 
+        /// <summary>
+        /// Строку в инт
+        /// </summary>
+        /// <param name="arg"></param>
+        /// <param name="def">Если не удалось распарсить, то возвращаем это значение</param>
+        /// <returns></returns>
+        private static int ToInt(string arg, int def = 100)
+        {
+            int x;
+            if (!int.TryParse(arg, out x))
+            {
+                x = def;
+            }
+
+            return x;
+        }
     }
+
 }
+
