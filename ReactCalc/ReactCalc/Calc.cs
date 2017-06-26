@@ -12,14 +12,14 @@ namespace ReactCalc
     public class Calc
     {
         /// <summary>
-        /// Сумма
+        /// Складывает числа и возвращает результат
         /// </summary>
         /// <param name="x">Слагаемое</param>
         /// <param name="y">Слагаемое</param>
         /// <returns>Сумма</returns>
         public int Sum(int x, int y)
         {
-            return x + y;
+            return (x + y);
         } 
     }
 }
