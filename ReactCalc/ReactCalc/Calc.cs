@@ -11,15 +11,32 @@ namespace ReactCalc
     /// </summary>
     public class Calc
     {
-        /// <summary>
-        /// Складывает числа и возвращает результат
-        /// </summary>
-        /// <param name="x">Слагаемое</param>
-        /// <param name="y">Слагаемое</param>
-        /// <returns>Сумма</returns>
-        public int Sum(int x, int y)
+        
+        public double Sum(double x, double y)
         {
             return (x + y);
-        } 
+        }
+
+        public double Subtract(double x, double y)
+        {
+            return (x - y);
+        }
+
+        public double Multiplication(double x, double y)
+        {
+            return x * y;       
+        }
+        
+        public double Divide(double x, double y)
+        {
+            return x / y;
+        }
+
+        public double SqrtNumber(double x, double y)
+        {
+            double z = 0;
+            z = x + y;
+            return Math.Sqrt(z);
+        }
     }
 }
