@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("ReactCalc")]
+[assembly: AssemblyTitle("FactorialLibrary")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Romeo1994")]
-[assembly: AssemblyProduct("ReactCalc")]
-[assembly: AssemblyCopyright("Copyright © Romeo1994 2017")]
+[assembly: AssemblyCompany("DDGroup")]
+[assembly: AssemblyProduct("FactorialLibrary")]
+[assembly: AssemblyCopyright("Copyright © DDGroup 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("62cd2afc-cdc4-4413-9bc0-c88105757146")]
+[assembly: Guid("069e9910-195c-4040-b462-06858254711e")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //
